@@ -1,8 +1,6 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-import Image from "next/Image";
-import { NAV_LINKS } from "@/constants";
 
 const NavBar = () => {
   const [isClick, setisClick] = useState(false);
