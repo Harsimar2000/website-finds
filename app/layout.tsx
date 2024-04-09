@@ -3,7 +3,7 @@ import NavBar from "@/components/Navbar";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import { SpeedInsights } from '@vercel/speed-insights/next';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -20,9 +20,8 @@ export default function RootLayout({
     <html lang="en">
       <body className=" min-h-screen bg-green-500">
         <NavBar />
-        <main className="relative overflow">
           {children}
-        </main>
+          <SpeedInsights />
         {/* <Footer/> */}
       </body>
     </html>
