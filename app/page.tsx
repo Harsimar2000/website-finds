@@ -40,12 +40,7 @@ export default function Home() {
               </li>
             </ol>
           </div>
-          <div className="relative">
-            <img
-              src="/mail.svg"
-              alt="mail icon"
-              className="absolute left-3 top-3 h-4 w-4 text-gray-500"
-            />
+          <div className="">
             <input
               type="text"
               className="border border-black rounded-lg pl-10 pr-10 w-80 h-10 focus:outline-none text-left"
