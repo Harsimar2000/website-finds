@@ -67,7 +67,7 @@ export default function Home() {
         </div>
 
         <div className=" flex items-center justify-center md:pl-20 sm:pt-7">
-          <img src="intro.png" alt="Image description" className="w-50" />
+          <img src="intro.png" alt="Image description" className="" />
         </div>
       </div>
     </div>
