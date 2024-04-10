@@ -2,7 +2,7 @@ import React from "react";
 
 const ScreenRecording = () => {
   return (
-    <video width="320" height="240" controls>
+    <video width="240" height="180"  autoPlay loop>
       <source src="1.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
