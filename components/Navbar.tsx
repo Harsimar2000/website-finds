@@ -43,7 +43,7 @@ const NavBar = () => {
           </button>
         </div>
         {isClick && (
-          <div className="fixed left-0 top-0 w-full min-h-screen py-4 px-10 bg-yellow-500 text-black md:hidden">
+          <div className="fixed left-0 top-0 w-full h-screen py-4 px-10 bg-green-500 text-black md:hidden">
             <div className="flex h-full flex-col">
               <div className="flex justify-between">
                 <h1 className="text-lg text-black">Finds</h1>
