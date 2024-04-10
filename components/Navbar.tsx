@@ -55,7 +55,7 @@ const NavBar = () => {
                 </p>
               </div>
 
-              <div className="flex flex-col h-full justify-center items-center gap-10">
+              <div className="flex flex-col h-full justify-center items-center gap-10" onClick={toggleNavbar}>
                 <div>
                   <Link href={"/"} className="p-2 text-5xl hover:text-white ">
                     Home
