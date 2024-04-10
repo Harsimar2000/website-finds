@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { toast } from "sonner";
 export default function Home() {
-  let success = false 
+  let success = false;
   const [inputText, setInputText] = useState("");
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -40,34 +40,30 @@ export default function Home() {
               </li>
             </ol>
           </div>
-          <div className="">
+          <div className="relative">
+            <img
+              src="/mail.svg"
+              alt="mail icon"
+              className="absolute left-3 top-3 h-4 w-4 text-gray-500"
+            />
             <input
               type="text"
-              className="border border-black rounded-lg pl-5 w-80 h-10 focus:outline-none focus:border-blue-500 text-center"
+              className="border border-black rounded-lg pl-10 pr-10 w-80 h-10 focus:outline-none text-left"
               value={inputText}
               onChange={handleInputChange}
               placeholder="Enter your email"
             />
           </div>
           <div className="pt-5">
-            {/* <button
-              className="bg-black text-white font-bold py-2 px-4 rounded  hover:bg-gray-800"
-              onClick={handleButtonClick} 
-            >
-              Join Waitlist
-            </button> */}
-
             <button
               className="bg-black text-white font-bold py-2 px-4 rounded hover:bg-gray-800"
               onClick={() => {
                 handleButtonClick();
                 if (success) {
                   toast.success("Congrats! you are on the waitlist");
-                }
-                else {
+                } else {
                   toast.error("Incorrect email try again");
                 }
-                
               }}
             >
               Join Waitlist
