@@ -11,7 +11,7 @@ const NavBar = () => {
   return (
     <div>
       <nav className="text-center py-4">
-        <ul className="hidden sm:block">
+        <ul className="hidden md:block">
           <Link
             href={"/"}
             className="p-2 hover:text-white rounded-lg hover:bg-green-700 mx-10"
@@ -37,13 +37,13 @@ const NavBar = () => {
             About
           </Link>
         </ul>
-        <div className="sm:hidden flex items-center justify-end px-10">
+        <div className="md:hidden flex items-center justify-end px-10">
           <button className="cursor-pointer text-md" onClick={toggleNavbar}>
             {isClick ? <h1>close</h1> : <h1>menu</h1>}
           </button>
         </div>
         {isClick && (
-          <div className="fixed left-0 top-0 w-full h-screen py-4 px-10 bg-yellow-500 text-black sm:hidden">
+          <div className="fixed left-0 top-0 w-full h-screen py-4 px-10 bg-yellow-500 text-black md:hidden">
             <div className="flex h-full flex-col">
               <div className="flex justify-between">
                 <h1 className="text-lg text-black">Finds</h1>
