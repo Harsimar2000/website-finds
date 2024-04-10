@@ -1,10 +1,8 @@
 import React from 'react'
-
+import ScreenRecording from '../../components/ScreenRecording';
 const about = () => {
   return (
-    <div>
-      about
-    </div>
+    <ScreenRecording/>
   )
 }
 
