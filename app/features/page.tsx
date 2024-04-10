@@ -4,8 +4,8 @@ import React from "react";
 const features = () => {
   return (
     <div className="flex items-center justify-center w-full">
-      <div className="flex md:flex-row flex-col w-full">
-        <div className="  w-full flex pt-20 flex-col">
+      <div className="flex md:flex-row flex-col w-full h-screen">
+        <div className="  w-full flex pt-32  pb-12 flex-col ">
           <div className="flex flex-col pl-24">
             <h1 className="text-3xl text-green-800 font-bold"> Home Page</h1>
             <div className="text-xl pt-5 text-green-700">
@@ -37,7 +37,7 @@ const features = () => {
             back to previous ones
           </h1></div>
         </div>
-        <div className=" w-full flex items-center justify-center pt-5 pb-5">
+        <div className=" w-full h-full flex items-center justify-center pt-5 pb-5">
           <ScreenRecording />
         </div>
       </div>
