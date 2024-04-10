@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
-
+import { toast } from "sonner";
 export default function Home() {
+  let success = false 
   const [inputText, setInputText] = useState("");
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -11,6 +12,10 @@ export default function Home() {
   const handleButtonClick = () => {
     console.log(inputText);
     // You can perform further actions with the input text here
+    if (inputText != "") {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      success = emailRegex.test(inputText);
+    }
   };
   return (
     <div className="flex items-center justify-center">
@@ -26,11 +31,12 @@ export default function Home() {
           </div>
           <div className="p-10">
             <ol className=" text-xl text-green-700">
+              <li>1. Join the wailtist to hear about when we launch</li>
               <li>
-                1. Join the wailtist to hear about when we launch
-              </li>
-              <li>
-                2. To know more about the app visit <a href="/features" className=" underline hover:text-gray-800">features section</a>
+                2. To know more about the app visit{" "}
+                <a href="/features" className=" underline hover:text-gray-800">
+                  features section
+                </a>
               </li>
             </ol>
           </div>
@@ -44,9 +50,25 @@ export default function Home() {
             />
           </div>
           <div className="pt-5">
-            <button
+            {/* <button
               className="bg-black text-white font-bold py-2 px-4 rounded  hover:bg-gray-800"
-              onClick={handleButtonClick}
+              onClick={handleButtonClick} 
+            >
+              Join Waitlist
+            </button> */}
+
+            <button
+              className="bg-black text-white font-bold py-2 px-4 rounded hover:bg-gray-800"
+              onClick={() => {
+                handleButtonClick();
+                if (success) {
+                  toast.success("Congrats! you are on the waitlist");
+                }
+                else {
+                  toast.error("Incorrect email try again");
+                }
+                
+              }}
             >
               Join Waitlist
             </button>
