@@ -30,7 +30,7 @@ export default function Home() {
                 1. Join the wailtist to hear about when we launch
               </li>
               <li>
-                2. To know more about the app visit <a href="http://localhost:3000/features" className=" underline hover:text-gray-800">features section</a>
+                2. To know more about the app visit <a href="/features" className=" underline hover:text-gray-800">features section</a>
               </li>
             </ol>
           </div>
