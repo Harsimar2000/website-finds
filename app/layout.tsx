@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className=" min-h-screen bg-green-500  overflow-hidden">
+      <body className=" min-h-screen bg-green-500">
         <NavBar />
           {children}
           <SpeedInsights />

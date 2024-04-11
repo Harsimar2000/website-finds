@@ -3,12 +3,12 @@ import React from "react";
 
 const features = () => {
   return (
-    <div className="flex items-center justify-center w-full">
-      <div className="flex md:flex-row flex-col w-full h-screen">
-        <div className="  w-full flex pt-32  pb-12 flex-col ">
-          <div className="flex flex-col pl-24">
-            <h1 className="text-3xl text-green-800 font-bold"> Home Page</h1>
-            <div className="text-xl pt-5 text-green-700">
+    <div className="flex items-center justify-center">
+      <div className="flex md:flex-row flex-col">
+        <div className=" w-full flex sm:pt-32  pb-12 flex-col p-10 items-center justify-center">
+          <div className="flex flex-col">
+            <h1 className="text-3xl text-green-800 font-bold pb-10"> Home Page</h1>
+            <div className="text-xl text-green-700">
               <div>
                 1. You can <span className="font-bold underline">bookmark</span>{" "}
                 a recipe to visit it at a later time{" "}
@@ -23,7 +23,7 @@ const features = () => {
               </div>
             </div>
           </div>
-          <div className="pl-24 pt-5 text-green-700"><h1>
+          <div className=" pt-5 text-green-700"><h1>
             1. Here you can see either{" "}
             <span className=" font-bold underline">all</span> the recipes or
             only of the people you are{" "}
